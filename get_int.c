@@ -1,15 +1,16 @@
 #include "main.h"
+
 /**
- * get_int - function to print integers
- * @args: list printed
+ * _int - function to print integers
+ * @integ: list printed
  * Return: Return count
  */
-int get_int(va_list args)
+int _int(va_list integ)
 {
 	int a, expo = 1, len = 0;
 	unsigned int n;
 
-	a = va_arg(args, int);
+	a = va_arg(integ, int);
 
 	if (a < 0)
 	{

@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * get_char - function to return char
- * @args: list given
+ * ch - function to return char
+ * @character: list given
  * Return: number of char printed
  */
-int get_char(va_list args)
+int ch(va_list character)
 {
-	return (_putchar(va_arg(args, int)));
+	return (_putchar(va_arg(character, int)));
 }
