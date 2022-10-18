@@ -25,7 +25,7 @@ int _pointer(va_list val)
 
 	a = (unsigned long int)p;
 	_putchar('0');
-	_putchar('x');
+	_putchar('0');
 	b = toHex(a);
 	return (b + 2);
 }
