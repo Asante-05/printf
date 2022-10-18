@@ -9,6 +9,10 @@ int _printf(char *format, ...)
 	va_list args;
 	int i, len = 0, strlen = _strlen(format);
 
+	if (format == NULL)
+	{
+		return (-1);
+	}
 	va_start(args, format);
 
 	for (i = 0; i < strlen; i++)
