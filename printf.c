@@ -63,6 +63,7 @@ int _printf(const char *format, ...)
 		{"x", _hex_l},
 		{"X", _hex_u},
 		{"R", _rot13},
+		{"S", _customStr},
 		{NULL, NULL}
 	};
 

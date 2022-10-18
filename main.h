@@ -18,6 +18,8 @@ typedef struct fmt
 
 int _printf(const char *format, ...);
 int print_op(const char *format, fmt_t *print_arr, va_list list);
+int toHex(unsigned int num);
+int _customStr(va_list rot);
 int ch(va_list character);
 int str(va_list string);
 int _int(va_list integ);
