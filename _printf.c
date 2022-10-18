@@ -1,19 +1,16 @@
 #include "main.h"
-
 /**
- * _printf - prints output according to format
- * @format: string being passed
- * Return: char to be printed
+ * _printf - prints to stdout
+ * @format: used to specify output
+ * Return: len of the string
  */
 int _printf(char *format, ...)
 {
 	va_list args;
-
-	int strlen = _strlen(format);
-	int len = 0;
-	int i;
+	int i, len = 0, strlen = _strlen(format);
 
 	va_start(args, format);
+
 	for (i = 0; i < strlen; i++)
 	{
 		if (format[i] == '%')
@@ -25,13 +22,11 @@ int _printf(char *format, ...)
 					i++;
 					len++;
 					break;
-
 				case 's':
 					get_string(args);
 					i++;
 					len++;
 					break;
-
 				case '%':
 					_putchar(37);
 					i++;
