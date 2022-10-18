@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * ch - function to return char
+ * get_char - function to return char
  * @args: list given
  * Return: number of char printed
  */
