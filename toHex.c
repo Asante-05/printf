@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * printf_HEX_aux - convert to hexdecimal
+ * toHex - convert to hexdecimal
  * @num: number to convert.
  * Return: len.
  */

@@ -1,12 +1,13 @@
 #include "main.h"
-/* _customStr - prints the string.
+/**
+ *_customStr - prints the string.
  *  @args: va_list being passed
  * Return: count of chars
  */
 
 int _customStr(va_list args)
 {
-    char *s;
+	char *s;
 	int i, len = 0;
 	int cast;
 
