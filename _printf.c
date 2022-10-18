@@ -1,8 +1,8 @@
 #include "main.h"
+
 /**
  * _printf - prints output according to format
  * @format: string being passed
- * Return: char to be printed
  */
 int _printf(char *format, ...)
 {
