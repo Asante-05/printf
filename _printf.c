@@ -16,19 +16,22 @@ int _printf(char *format, ...)
             switch (format[i + 1])
             {
             case 'c':
-            {
                 get_char(args);
                 i++;
                 len++;
                 break;
-            }
+
             case 's':
-            {
                 get_string(args);
                 i++;
                 len++;
                 break;
-            }
+
+            case '%':
+                _putchar(37);
+                i++;
+                len++;
+                break;
             }
         }
         else
