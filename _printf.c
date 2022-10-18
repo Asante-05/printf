@@ -32,6 +32,11 @@ int _printf(char *format, ...)
 					i++;
 					len++;
 					break;
+				case 'd':
+					get_int(args);
+					i++;
+					len++;
+					break;
 			}
 		}
 		else

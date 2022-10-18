@@ -11,7 +11,7 @@ int _strlen(char *string);
 int _printf(char *format, ...);
 int get_char(va_list args);
 int get_string(va_list args);
-
+int get_int(va_list args);
 
 
 int numOfChars(unsigned int num);
